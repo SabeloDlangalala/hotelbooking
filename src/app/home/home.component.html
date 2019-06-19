@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><Hotel Booking Form></title>
+        </head>
+<body>
+   
+
+    
+<form action="" >
+    <fieldset>
+        <legend>Personal Details: </legend>
+  <label for="name">Username: </label><input type="text" name="username" id="name" required autofocus placeholder="enter your username" pattern="[a-zA-Z]{3,}" title="please enter in more than three letters">
+ <label for="email">Email: </label><input type="text" name="email" id="email" required placeholder="enter your email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter a valid email address">
+<label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required placeholder=" enter your phone number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" title="please enter your phone number : ### ### ###">
+<select name="country">
+<option value=""></option>
+<option value="US">US</option>
+<option value="UK">UK</option>
+<option value="RSA">ZAR</option>
+</select>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Booking Details:</legend>
+    <label for="date">Booking date: </label><input id="date"type="date" name="date" min="24-04-2018">
+    <label for="Payment ">Payment Details:</label><input id="payment" type="number" name="payment" min="1700" max="8000">
+    <p>Saving or Cheque?</p>
+    <label for="Saving">Saving: </label><input id="yesmeals" type="radio" name="Saving" value="Saving">
+    <label for="Cheque"></label>Cheque:<input id="Cheque"type="radio" name="Cheque" value="Cheque"><br>
+    <label for="numberOfGuests">numberOfGuests: </label><input id="numberOfGuests"type="number" name="NumberOfGuests" min="1" max="6">
+    <p>Do you require meals?</p>
+    <label for="yesMeals">Yes: </label><input id="yesmeals" type="radio" name="meals" value="yesMeals">
+    <label for="noMeals"></label>No:<input id="noMeals"type="radio" name="meals" value="noMeals">
+    <br>
+    <label for="balcony">Do you require a balcony?</label><input id="balcony" type="checkbox" name="balcony" value="yes" checked>
+    <br>
+    <input type="submit" value="Submit" routerLink="/services">
+</fieldset>
+</form>
+
+
+
+</body>
+</html>
+
+  
